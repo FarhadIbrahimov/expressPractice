@@ -96,14 +96,20 @@ const responses = [
 
 To run your Express application, execute the following command in your terminal:
 
+```
 node server.js
 
-Visit the following routes in your web browser or API testing tool:
+```
 
+#### Visit the following routes in your web browser or API testing tool:
+
+```
 http://localhost:8080/greeting
 http://localhost:8080/greeting/\<name>
 http://localhost:8080/tip/\<total>/<tipPercentage>
 http://localhost:8080/magic/\<question>
+
+```
 
 ##Conclusion
 
