@@ -22,33 +22,37 @@ Before you start, make sure you have the following:
 
 ## Getting Started
 
-1. Create a JavaScript file named `server.js` in the homework directory for today.
-2. Run the following command to initialize your project:
+#### 1. Create a JavaScript file named `server.js` in the homework directory for today.
 
-   ```bash
+#### 2. Run the following command to initialize your project:
 
-   npm init -y
-   ```
+```bash
+
+npm init -y
+```
 
 This will generate a package.json file for your project.
 
-1. Install Express by running the following command:
+#### 1. Install Express by running the following command:
 
 npm install express
 
 Make sure you see express listed in your package.json file.
 
-2. Open your server.js file and require Express at the top of the file:
+#### 2. Open your server.js file and require Express at the top of the file:
 
 const express = require("express");
 const app = express();
 
-3. Set up the server to listen for requests on a specific port. You can choose a port number, for example:
+#### 3. Set up the server to listen for requests on a specific port. You can choose a port number, for example:
 
+```
 const PORT = 8080;
 app.listen(PORT, () => {
 console.log("Listening on port " + PORT);
 });
+
+```
 
 ### Greetings Route
 
