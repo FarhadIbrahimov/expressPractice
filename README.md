@@ -66,7 +66,7 @@ console.log("Listening on port " + PORT);
 #### Create a route that calculates the tip based on the total amount of the bill and the tip percentage:
 
 > > Route: `/tip/:total/:tipPercentage`
-> > Response: `"Calculated {tipPercentage}% tip on $<total> is ${calculatedTip}"`
+> > Response: `"Calculated ${tipPercentage}% tip on ${total} is ${calculatedTip}"`
 
 ### Magic 8 Ball Route
 
@@ -109,4 +109,5 @@ Remember, if you encounter any issues or have questions, don't hesitate to reach
 
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
+
 ````
