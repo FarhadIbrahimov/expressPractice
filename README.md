@@ -24,12 +24,13 @@ Before you start, make sure you have the following:
 
 1. Create a JavaScript file named `server.js` in the homework directory for today.
 2. Run the following command to initialize your project:
+
    ```bash
-   
+
    npm init -y
+   ```
 
 This will generate a package.json file for your project.
-
 
 1. Install Express by running the following command:
 
@@ -46,40 +47,44 @@ const app = express();
 
 const PORT = 8080;
 app.listen(PORT, () => {
-  console.log("Listening on port " + PORT);
+console.log("Listening on port " + PORT);
 });
 
-## Greetings Route
+### Greetings Route
 
-Create a route that sends a generic greeting to the screen:
+#### Create a route that sends a generic greeting to the screen:
 
-Route: /greeting
-Response: "Hello, stranger!"
-You can also create a personalized greeting route by adding a parameter:
+> > Route: /`greeting Response: "Hello, stranger!"`
+> >
+> > > You can also create a personalized greeting route by adding a parameter:
 
-Route: /greeting/:name
-Response: "What's up, <name>!" or "<name>! It's so great to see you!"
-Tip Calculator Route
-Create a route that calculates the tip based on the total amount of the bill and the tip percentage:
+> > Route: `/greeting/:name`
+> > Response: ` "What's up, ${name}!"`` or  `"${name}! It's so great to see you!"`
 
-Route: /tip/:total/:tipPercentage
-Response: "Calculated <tipPercentage>% tip on $<total> is $<calculatedTip>"
-Magic 8 Ball Route
-Create a route that simulates a Magic 8 Ball response to a user's question:
+### Tip Calculator Route
 
-Route: /magic/:question
-Response: "<question>?<br><randomMagicResponse>"
-Use the following array of Magic 8 Ball responses:
+#### Create a route that calculates the tip based on the total amount of the bill and the tip percentage:
 
-const responses = [
-  "It is certain", "It is decidedly so", "Without a doubt", "Yes definitely",
-  "You may rely on it", "As I see it yes", "Most likely", "Outlook good",
-  "Yes", "Signs point to yes", "Reply hazy try again", "Ask again later",
-  "Better not tell you now", "Cannot predict now", "Concentrate and ask again",
-  "Don't count on it", "My reply is no", "My sources say no",
-  "Outlook not so good", "Very doubtful"
-];
+> > Route: `/tip/:total/:tipPercentage`
+> > Response: `"Calculated {tipPercentage}% tip on $<total> is ${calculatedTip}"`
 
+### Magic 8 Ball Route
+
+### Create a route that simulates a Magic 8 Ball response to a user's question:
+
+> > Route: `/magic/:question`
+> > Response: `"${question}?<br>${randomMagicResponse}"`
+> >
+> > > Use the following array of Magic 8 Ball responses:
+
+````const responses = [
+ "It is certain", "It is decidedly so", "Without a doubt", "Yes definitely",
+ "You may rely on it", "As I see it yes", "Most likely", "Outlook good",
+ "Yes", "Signs point to yes", "Reply hazy try again", "Ask again later",
+ "Better not tell you now", "Cannot predict now", "Concentrate and ask again",
+ "Don't count on it", "My reply is no", "My sources say no",
+ "Outlook not so good", "Very doubtful"
+ ]; ```
 
 ## Running the App
 
@@ -94,9 +99,6 @@ http://localhost:8080/greeting/\<name>
 http://localhost:8080/tip/\<total>/<tipPercentage>
 http://localhost:8080/magic/\<question>
 
-
-
-
 ##Conclusion
 
 Congratulations! You've successfully completed the First Express Lab. You've practiced setting up Express servers, creating custom routes, and using URL/query parameters. Feel free to explore further and build upon these concepts to create more advanced applications.
@@ -107,4 +109,4 @@ Remember, if you encounter any issues or have questions, don't hesitate to reach
 
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
-
+````
